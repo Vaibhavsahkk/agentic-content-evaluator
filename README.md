@@ -2,6 +2,8 @@
 
 > **Self-Evaluating Educational Content Generation Engine with Multi-Stage Quality Gating and Cross-Run Memory**
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-agentic--content--evaluator.onrender.com-success?style=for-the-badge&logo=render)](https://agentic-content-evaluator.onrender.com)
+
 [![CI Test & Build Suite](https://github.com/Vaibhavsahkk/agentic-content-evaluator/actions/workflows/ci.yml/badge.svg)](https://github.com/Vaibhavsahkk/agentic-content-evaluator/actions)
 ![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue.svg)
 ![LangGraph](https://img.shields.io/badge/orchestrator-LangGraph-orange.svg)
@@ -10,6 +12,8 @@
 ![React](https://img.shields.io/badge/frontend-React%2019%20%2B%20Vite-blue.svg)
 ![Tests](https://img.shields.io/badge/tests-38%20passing-brightgreen.svg)
 ![License](https://img.shields.io/badge/license-MIT-purple.svg)
+
+> 🌐 **Live Application URL**: [https://agentic-content-evaluator.onrender.com](https://agentic-content-evaluator.onrender.com)
 
 ---
 
