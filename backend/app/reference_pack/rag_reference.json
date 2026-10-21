@@ -1,0 +1,72 @@
+{
+  "pack_name": "Introduction to RAG Curated Primary Sources",
+  "version": "1.0.0",
+  "topic": "Introduction to RAG",
+  "last_reviewed": "2026-10-21",
+  "items": [
+    {
+      "source_id": "REF-01",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "authors": "Patrick Lewis, Ethan Perez, Aleksandara Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, Sebastian Riedel, Douwe Kiela",
+      "publication_date": "2020-05-22",
+      "date_verified": "2026-10-21",
+      "claims": [
+        "RAG combines pre-trained parametric memory (the model's internal weights) with non-parametric memory (an external index of document texts).",
+        "During query time, an external retriever selects relevant document passages based on the user's input.",
+        "The generative language model produces the response conditioned on both the retrieved text and the original input prompt.",
+        "Retrieval occurs dynamically at inference time; it does NOT retrain or alter the model's neural network weights."
+      ],
+      "excerpt": "We explore general-purpose fine-tuning recipes for Retrieval-Augmented Generation (RAG) — models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever.",
+      "version": "1.0.0"
+    },
+    {
+      "source_id": "REF-02",
+      "title": "LlamaIndex Documentation: Core Concepts (Chunking, Embeddings, Retrieval)",
+      "url": "https://docs.llamaindex.ai/en/stable/getting_started/concepts/",
+      "authors": "LlamaIndex Core Team",
+      "publication_date": "2023-11-15",
+      "date_verified": "2026-10-21",
+      "claims": [
+        "Raw documents are broken down into smaller, coherent units called 'text chunks' to fit within model context windows and preserve local focus.",
+        "An embedding model converts text chunks into high-dimensional numerical vectors that represent semantic meaning.",
+        "Vector search retrieves chunks whose vector representations are mathematically closest (e.g. cosine similarity) to the user question.",
+        "Chunking strategy affects retrieval quality: chunks that are too small lose context, while chunks that are too large dilute relevance."
+      ],
+      "excerpt": "A chunk is a small piece of a document. An embedding is a vector representation of that text chunk. When a user asks a question, we compute the question's embedding and find the nearest chunk vectors in the index.",
+      "version": "1.0.0"
+    },
+    {
+      "source_id": "REF-03",
+      "title": "LangChain Documentation: Retrieval-Augmented Generation (RAG) Architecture",
+      "url": "https://python.langchain.com/docs/tutorials/rag/",
+      "authors": "Harrison Chase, LangChain Team",
+      "publication_date": "2024-01-10",
+      "date_verified": "2026-10-21",
+      "claims": [
+        "A typical RAG pipeline has two phases: Ingestion (Loading, Chunking, Embedding, Vector Store storage) and Retrieval & Generation (Querying, Context Injection, LLM Generation).",
+        "RAG enables language models to answer questions about private, proprietary, or post-cutoff documents without costly model retraining.",
+        "A common practical example is an automated student assistant answering queries directly from a university policy handbook.",
+        "Injecting retrieved context directly into the prompt ensures that answers are grounded in explicit source documents."
+      ],
+      "excerpt": "RAG is a technique for augmenting LLM knowledge with additional data. LLMs can reason about wide-ranging topics, but their knowledge is limited to the public data up to the point in time they were trained. If you want to build AI applications that can reason about private data or data introduced after a model's cutoff date, you need to augment the knowledge of the model with that specific information.",
+      "version": "1.0.0"
+    },
+    {
+      "source_id": "REF-04",
+      "title": "Prompt Engineering & Grounding Mitigations: RAG Hallucination Boundaries",
+      "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+      "authors": "Anthropic Research & Documentation",
+      "publication_date": "2024-03-01",
+      "date_verified": "2026-10-21",
+      "claims": [
+        "RAG significantly reduces hallucinations by anchoring answers to source documents, but cannot guarantee 100% factual accuracy.",
+        "If an irrelevant or incorrect chunk is retrieved, the generator can produce a wrong or hallucinated answer ('garbage in, garbage out').",
+        "The model must be instructed to rely strictly on provided evidence and admit when information is missing from the context.",
+        "Evaluation rubrics and verification checks are necessary to catch unsupported assertions in RAG outputs."
+      ],
+      "excerpt": "Retrieval-augmented generation grounds outputs in provided context. However, generation quality remains bounded by retrieval precision. If context is missing the answer, models risk generating plausible-sounding but ungrounded claims unless explicitly constrained.",
+      "version": "1.0.0"
+    }
+  ]
+}
