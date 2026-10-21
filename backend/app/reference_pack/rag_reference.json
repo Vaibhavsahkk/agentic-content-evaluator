@@ -8,7 +8,7 @@
       "source_id": "REF-01",
       "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
       "url": "https://arxiv.org/abs/2005.11401",
-      "authors": "Patrick Lewis, Ethan Perez, Aleksandara Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, Sebastian Riedel, Douwe Kiela",
+      "authors": "Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, Sebastian Riedel, Douwe Kiela",
       "publication_date": "2020-05-22",
       "date_verified": "2026-10-21",
       "claims": [
@@ -22,10 +22,10 @@
     },
     {
       "source_id": "REF-02",
-      "title": "LlamaIndex Documentation: Core Concepts (Chunking, Embeddings, Retrieval)",
+      "title": "LlamaIndex Documentation: High-Level Concepts (Chunking, Embeddings, Retrieval)",
       "url": "https://docs.llamaindex.ai/en/stable/getting_started/concepts/",
-      "authors": "LlamaIndex Core Team",
-      "publication_date": "2023-11-15",
+      "authors": "LlamaIndex Documentation",
+      "publication_date": null,
       "date_verified": "2026-10-21",
       "claims": [
         "Raw documents are broken down into smaller, coherent units called 'text chunks' to fit within model context windows and preserve local focus.",
@@ -41,7 +41,7 @@
       "title": "LangChain Documentation: Retrieval-Augmented Generation (RAG) Architecture",
       "url": "https://python.langchain.com/docs/tutorials/rag/",
       "authors": "Harrison Chase, LangChain Team",
-      "publication_date": "2024-01-10",
+      "publication_date": null,
       "date_verified": "2026-10-21",
       "claims": [
         "A typical RAG pipeline has two phases: Ingestion (Loading, Chunking, Embedding, Vector Store storage) and Retrieval & Generation (Querying, Context Injection, LLM Generation).",
@@ -54,10 +54,10 @@
     },
     {
       "source_id": "REF-04",
-      "title": "Prompt Engineering & Grounding Mitigations: RAG Hallucination Boundaries",
+      "title": "Anthropic Documentation: Prompt Engineering Overview",
       "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
-      "authors": "Anthropic Research & Documentation",
-      "publication_date": "2024-03-01",
+      "authors": "Anthropic Documentation",
+      "publication_date": null,
       "date_verified": "2026-10-21",
       "claims": [
         "RAG significantly reduces hallucinations by anchoring answers to source documents, but cannot guarantee 100% factual accuracy.",

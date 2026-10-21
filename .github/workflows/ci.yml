@@ -30,7 +30,9 @@ jobs:
           GROQ_API_KEY: ""
           ENVIRONMENT: "testing"
           LANGSMITH_TRACING: "false"
+          PYTHONPATH: "."
         run: |
+          pip install -e .
           python -m pytest tests/ -v
 
   frontend-build:
